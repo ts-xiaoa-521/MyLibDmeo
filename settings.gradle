@@ -1,0 +1,3 @@
+rootProject.name='MyLibDmeo'
+include ':app'
+include ':ts_xiaoa_lib'

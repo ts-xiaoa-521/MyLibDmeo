@@ -1,0 +1,15 @@
+apply plugin: 'com.android.application'
+apply from:'../ts_xiaoa_lib/build_config.gradle'
+
+android {
+
+    defaultConfig {
+        applicationId "com.ts_xiaoa.mylib_demo"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':ts_xiaoa_lib')
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+}

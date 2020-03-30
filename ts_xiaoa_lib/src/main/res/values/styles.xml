@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App风格 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowBackground">@drawable/bg_normal_window</item>-->
+        <item name="android:windowBackground">@color/colorWindowBg</item>
+        <item name="android:textColorHint">@color/colorTextColorHint</item>
+        <item name="android:textColor">@color/colorTextColor</item>
+        <item name="android:textViewStyle">@style/text_style</item>
+        <item name="android:editTextStyle">@style/edit_style</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <!--EditText 默认Style-->
+    <style name="edit_style" parent="Widget.AppCompat.EditText">
+        <item name="android:textColorHint">@color/colorTextColorHint</item>
+        <item name="android:textColor">@color/colorTextColor</item>
+        <item name="android:background">#0000</item>
+    </style>
+
+    <!--TextView 默认Style-->
+    <style name="text_style" parent="Widget.AppCompat.TextView">
+        <item name="android:textColorHint">@color/colorTextColorHint</item>
+        <item name="android:textColor">@color/colorTextColor</item>
+        <item name="android:background">#0000</item>
+    </style>
+
+    <!--DialogFragment style-->
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--DialogFragment 底部弹出style-->
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomDimDialogStyle">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+</resources>
